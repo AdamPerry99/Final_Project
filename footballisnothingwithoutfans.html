@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <!-- seo meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Football, Soccer, Fans, Stadiums, Covid-19, Pandemic, Coronavirus, Arsenal, Manchester United, Manchester City, Chelsea, Tottenham, Liverpool, Protests, Old Trafford, Emirates">
+  <meta name="description" content="The 16 month journey of football fans through the pandemic">
+  <meta name="web_author" content="Adam Perry">
+  <meta name="language" content="English">
+
+  <!-- for facebook and linked =in previews -->
+  <meta property='og:title' content="Football is nothing without fans: The journey of football fans during the pandemic" />
+  <meta name="image" property="og:image" content="https://i.ibb.co/QMQYxWL/previewsocial.png">
+  <meta property='og:description' content="A comprehensive coverage of the journey of football fans over the past 16 months" />
+  <meta property='og:url' content="http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html" />
+
+  <!-- title and tab icon -->
+  <title>Football is nothing without fans</title>
+  <link rel="icon" href="https://i.ibb.co/Q8RCXpM/headerimage.png">
+
+  <!-- calling uikit components -->
+  <link type="text/css" rel="stylesheet" href="js/uikit-2.27.5/css/uikit.css" />
+  <link type="text/css" rel="stylesheet" href="js/uikit-2.27.5/css/components/sticky.almost-flat.min.css" />
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/uikit-2.27.5/js/uikit.min.js"></script>
+  <script type="text/javascript" src="js/uikit-2.27.5/js/components/sticky.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit-icons.min.js"></script>
+
+  <!-- google font import for the heading -->
+  <!-- I wanted a font beyond the original websafe fonts which had more of an impact and more of a header type feeling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+  <!-- default css stylesheet when the page is loaded -->
+  <link id="currentTheme" rel="stylesheet" href="css/light.css" type="text/css">
+
+  <script>
+    /* when the changeTheme function is triggered by a button at the top of the page, it takes the value attributed to the button and changes the href to that value, loading a different stylesheet if the opposite button is clicked */
+    function changeTheme(sheet){
+        document.getElementById('currentTheme').setAttribute('href', sheet);
+    }
+  </script>
+
+  <!-- import for the burger icon for the mobile navbar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    #themeButton{
+      border: 2px solid black;
+      background-color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- In person interviews were filmed with a Huawei P20 Mini with a Boya Lavalier microphone -->
+  <!-- Online interviews were filmed using zoom and the interviewee's best available microphone -->
+
+
+
+  <!-- header section including an image, title, byline, and smoth scroll chevron -->
+  <figure id="header" class="uk-overlay">
+    <!-- footage of Manchester United protest (Credit: Adam Blaize) edited in Premier Pro and uploaded to streamable -->
+    <!-- loop and autoplay added -->
+    <iframe class="uk-visible-large" data-uk-cover src="https://streamable.com/e/f3zl19?autoplay=1&nocontrols=1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+    <!-- static header for mobiles which is simpler and increases speed -->
+    <img class="uk-hidden-large" src="https://i.ibb.co/WGtJNKc/verticalmobileheader.png" alt="verticalmobileheader" border="0" style="height: 100vh; width: 100vw;">
+    <!-- overlay panel -->
+    <figcaption class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
+      <div>
+        <h1 class="uk-heading-large">Football is nothing</h1>
+        <h1 class="uk-heading-large">without fans</h1>
+        <h1 class="uk-heading-small">The journey of football fans during the pandemic</h1>
+        <!-- byline -->
+        <h3 class="uk-margin-large-top">Adam Perry - 26/07/2021</h3>
+        <!-- share icons -->
+        <h3><a
+            href="https://twitter.com/intent/tweet?url=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html&text=Football%20is%20nothing%20without%20fans:%20The%20journey%20of%20football%20fans%20during%20the%20pandemic%0A%0ACheck%20out%20@Ap3Journalism's%20article:"><img
+              src="https://i.ibb.co/Sn53SMH/twitter-Icon-BB.png" alt="twitter-Icon-BB" border="0" class="headerIcon uk-margin-left uk-margin-right"></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html"><img src="https://i.ibb.co/Lh9ywYW/facebook-Icon-BB.png" alt="facebook-Icon-BB" border="0"
+              class="headerIcon uk-margin-right"></a>
+          <a href="https://api.whatsapp.com/send?text=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html"><img src="https://i.ibb.co/LN02h0v/whatsapp-Icon-BB.png" alt="whatsapp-Icon-BB" border="0"
+              class="headerIcon uk-margin-right"></a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html&title=&summary=&source="><img src="https://i.ibb.co/xGYBVzD/linkedin-Icon-BB.png" alt="linkedin-Icon-BB"
+              border="0" class="headerIcon uk-margin-right"></a>
+          <a href="mailto:?&subject=&body=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html"><img src="https://i.ibb.co/kDT3xhH/email-Icon-BB.png" alt="email-Icon-BB" border="0" class="headerIcon"></a>
+        </h3>
+        <!-- chevron with link to scroll, offset to matchup with navbar when scrolling -->
+        <a href="#intro" data-uk-smooth-scroll="{offset: 55}"><i class="uk-icon-chevron-down uk-icon-medium" style="color: white"></i></a>
+      </div>
+    </figcaption>
+  </figure>
+
+
+  <!-- navbar, sticky, customised using the uikit website -->
+  <nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
+    <a href="#header" class="uk-navbar-brand uk-hidden-small"></a>
+    <!-- scrollspy with offset to get around the page nicely -->
+    <ul class="uk-navbar-nav uk-hidden-small" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: {offset: 115}}">
+      <!-- links to each section -->
+      <li><a href="#intro">I - Intro</a></li>
+      <li><a href="#timeline">II - Timeline</a></li>
+      <li><a href="#superleague">III - Super League</a></li>
+      <li><a href="#ownershipprotests">IV - Protests</a></li>
+      <li><a href="#OnThePitch">V - On the Pitch</a></li>
+      <li><a href="#whatsnext">VI - Summer & Beyond</a></li>
+    </ul>
+  </nav>
+
+  <!-- mobile navbar, visible small to only show on phones, similar style/function to the desktop version -->
+  <div class="mobilenav uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
+    <a href="#header" class="uk-navbar-brand uk-visible-small"></a>
+    <ul class="uk-navbar-nav uk-visible-small" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: {offset: 115}}">
+      <div id="scrollsections">
+        <li><a href="#intro">I - Intro</a></li>
+        <li><a href="#timeline">II - Timeline</a></li>
+        <li><a href="#superleague">III - Super League</a></li>
+        <li><a href="#ownershipprotests">IV - Protests</a></li>
+        <li><a href="#OnThePitch">V - On the Pitch</a></li>
+        <li><a href="#whatsnext">VI - Summer & Beyond</a></li>
+      </div>
+      <!-- calls the function to hide and show the burger menu -->
+      <a href="javascript" class="icon" onclick="openBurgerFunction()">
+        <!-- the burger menu icon using custom font -->
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+  <script>
+    // when the burger icon is clicked, the links to each section appear, if clicked again it will hide the links
+    // default is not to show the links
+    function openBurgerFunction() {
+      var x = document.getElementById("scrollsections");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+  <!-- introduction section to set the scene -->
+  <section id="intro">
+    <!-- 60% width for main sections of the page -->
+    <div class="uk-article uk-width-medium-6-10 uk-container-center uk-margin-top">
+      <div style="background-color: yellow;">
+        <!-- buttons to toggle the theme switching function to change css files -->
+        <!-- disabled theme buttons as the timeline was fading out not in on dark theme -->
+        <!--
+        <button id="themeButton" onclick="changeTheme('css/light.css')">Light Theme</button>
+        <button id="themeButton" onclick="changeTheme('css/dark.css')">Dark Theme</button>
+      -->
+      </div>
+
+      <!-- blockquote for emphasis at the start of the piece -->
+      <blockquote>
+        <p class="blockquotetext uk-margin-left"> Football counts for zero right now. This is a pandemic, a situation none of us had experienced before now. The priority is to concentrate on this fight, the rest does not matter."</p> <span>Carlo
+          Ancelotti, March 2020</span>
+      </blockquote>
+      <!-- bold for the hook -->
+      <p class="bold">For years we have taken football for granted, from the intense tactical battles to the pre-match pints in crowded pubs. For many football is not zero, it is their everything, and when Covid-19 came to England in early 2020 it
+        all got taken away. The beautiful game was on the brink.</p>
+
+      <p>Professional football in England was suspended on March 13th 2020 due to a rising number of coronavirus cases. The Football Association initially announced a three-week postponement to ease the strain on clubs and to monitor the
+        national situation, but this postponement went on to last for over three months.</p>
+      <p>Carlo Ancelotti, Everton manager at the time, <a href="https://www.evertonfc.com/news/1645705/ancelotti-health-is-the-only-priority">endorsed the shutdown</a>, saying: "We could not continue. Health is the most important thing for everyone:
+        teams, fans, media, everyone who works in football."</p>
+      <p>The shutdown of football may have been the right decision, but it sparked a turbulent 16-month journey for fans across the country. With lockdown measures now eased and the new Premier League season around the corner, it is time to re-live
+        that journey.</p>
+      <p>As Jock Stein and Matt Busby proclaimed decades ago: "Football is nothing without fans."</p>
+    </div>
+  </section>
+
+
+
+  <!-- timeline section to give an overview -->
+  <h2 class="uk-margin-large-top">Timeline of Football during the Pandemic</h2>
+  <!-- ended the 60% in favour of 100% for effect with the background colour change -->
+  <!-- the hope is the change in color and width will engage the reader -->
+  <div class="uk-container-center timelinebg">
+
+    <!--  <script>
+    $(document).on("scroll", function() {
+      var pageTop = $(document).scrollTop();
+      var pageBottom = pageTop + $(window).height();
+      var tags = $(".content");
+
+      for (var i = 0; i < tags.length; i++) {
+        var tag = tags[i];
+
+        if ($(tag).position().top < pageBottom) {
+          $(tag).addClass("visible");
+        } else {
+          $(tag).removeClass("visible");
+        }
+      }
+    });
+  </script> -->
+
+    <section id="timeline" class="timeline">
+      <!-- left containers and right containers for aesthetic -->
+      <div class="container left" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>March 13th 2020 - Fixtures postponed</h4>
+          <p class="white">The Premier League, English Football League, Women's Super League and Football Association united to postpone fixtures following rising Covid-19 cases, including Arsenal manager Mikel Arteta and Chelsea attacker Callum
+            Hudson-Odoi.</p>
+        </div>
+      </div>
+      <div class="container right" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>March 26th 2020 - FA voids non-league seasons</h4>
+          <p class="white">The Football Association announced that all non-league and grassroots seasons below National League and National League North and South levels will be void as a result of Covid-19.</p>
+          <img src="https://i.ibb.co/4gHX5ks/woodfoodtown.png" alt="woodfoodtown" border="0">
+        </div>
+      </div>
+      <div class="container left" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>June 17th 2020 - Premier League resumes</h4>
+          <p class="white">The Premier League resumed with Aston Villa vs Sheffield United played behind closed doors. All matches were picked up by broadcasters to allow fans to watch games in the absence of attending stadiums. With the break in the
+            season and cases of Covid-19 still prominent, the number of substitutes increased from 3 to 5.</p>
+        </div>
+      </div>
+      <div class="container right" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>August 1st 2020 - FA Cup final without fans</h4>
+          <p class="white">The FA Cup final was played at an empty Wembley Stadium for the first time ever as Arsenal won a record 14th FA Cup with a 2-1 victory over Chelsea.</p>
+        </div>
+      </div>
+      <div class="container left" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>August 29th 2020 - Pilot test event</h4>
+          <p class="white">2,500 fans were welcomed back to Brighton's Amex Stadium for their friendly match against Chelsea as a government test event.</p>
+        </div>
+      </div>
+      <div class="container right" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>September 12th 2020 - 2020/21 Premier League season begins</h4>
+          <p class="white">The 2020/21 Premier League season kicked off with stadiums remaining empty despite lockdown measures having eased in England. The 5-substitute rule continued to help squads navigate the short break in between seasons as
+            well as Covid-19 outbreaks.</p>
+          <img src="https://i.ibb.co/dcKS8SD/WestHam.png" alt="WestHam" border="0">
+        </div>
+      </div>
+      <div class="container left" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>October 9th 2020 - Pay Per View announced</h4>
+          <p class="white">In the absence of fans in stadiums, it was announced that 5 of each matchday's 10 Premier League games would be moved onto Sly Sports and BT Sport's box office platforms. Each match cost &#163;14.95 on the <a class="TL"
+              href="https://www.vavel.com/en/football/2020/10/14/southampton/1041846-are-you-willing-to-pay-1495-to-watch-pay-per-viewpremier-league-games.html">pay per view scheme</a>
+            which would help generate revenue for clubs in light of no matchday income.</p>
+        </div>
+      </div>
+      <div class="container right" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>November 13th 2020 - Pay Per View cancelled</h4>
+          <p class="white">Following uproar from football fans, the pay per view model was scrapped by the Premier League. Instead, all games were distributed between Sky Sports, BT Sport, BBC and Prime Video.</p>
+        </div>
+      </div>
+      <div class="container left" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>December 2nd 2020 - Fans return to stadiums</h4>
+          <p class="white">For the first time in 266 days, <a class="TL" href="http://raven-news.uk/sports/a-very-special-night-as-fans-return-to-the-emirates/">football fans returned</a> to stadiums for competitive football. Cambridge, Carlisle,
+            Charlton, Luton, Shrewsbury and Wycombe were the first to welcome fans back with a maximum capacity of 2,000.</p>
+        </div>
+      </div>
+      <div class="container right" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>December 19th 2020 - Tier 4 lockdown</h4>
+          <p class="white">The return of fans is short-lived with England entering into a Tier 4 lockdown amid rising Covid-19 cases.</p>
+        </div>
+      </div>
+      <div class="container left" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>April 18th 2021 - Fans at FA Cup Semi-Final</h4>
+          <p class="white">4,000 fans attended the FA Cup Semi-Final as Leicester City beat Southampton 1-0. The game was part of a pilot scheme with research being done about the easing of coronavirus restrictions.</p>
+        </div>
+      </div>
+      <div class="container right" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>April 18th 2021 - Founding of The Super League</h4>
+          <p class="white">Arsenal, Chelsea, Liverpool, Manchester City, Manchester United and Tottenham agree to join 6 other European clubs to form The Super League, chaired by Florentino P&eacute;rez. The league intended to rival, and eventually
+            replace, the UEFA Champions League.</p>
+          <img src="https://i.ibb.co/c1HSZjN/Man-United.png" alt="Man-United" border="0">
+        </div>
+      </div>
+      <div class="container left" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>April 21st 2021 - 6 English clubs withdraw from The Super League</h4>
+          <p class="white">After only a matter of days, the 6 Premier League clubs announced their withdrawal from the European Super League following widespread backlash from the British government, footballing bodies, media and fans.</p>
+        </div>
+      </div>
+      <div class="container right" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>May 2nd 2021 - Manchester United vs Liverpool postponed</h4>
+          <p class="white">Thousands of fans from Manchester United gathered outside Old Trafford and the team hotel to protest against their owners, the Glazers. During the protests, hundreds of fans made their way into the stadium and onto the
+            pitch, forcing the abandonment of the game, which was then played on May 13th.</p>
+        </div>
+      </div>
+      <div class="container left" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>May 18th-23rd 2021 - Fans return to Premier League stadiums</h4>
+          <p class="white">Fans return to Premier League stadiums for each team's final home game of the 2020/21 season. Capacity is limited to a maximum of 10,000 fans or 25% of stadium capacity depending on which is lower.</p>
+          <img src="https://i.ibb.co/S0pLM0k/FansBack.png" alt="FansBack" border="0">
+        </div>
+      </div>
+      <div class="container right" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>June 13th 2021 - Fans at Wembley for England's first game of Euro 2020</h4>
+          <p class="white">18,497 fans attended England's opening game of the European Championships at Wembley Stadium against Croatia.</p>
+        </div>
+      </div>
+      <div class="container left" uk-scrollspy="cls:uk-animation-fade">
+        <div class="content">
+          <h4>July 11th 2021 - 67,173 at Wembley for Euro Final</h4>
+          <p class="white">67,173 fans were in attendance for the final of the European Championships between England and Italy. Strict entry requirements included negative Covid tests and proof of full vaccination, however a number of extra fans
+            forced their way into the stadium.</p>
+          <img src="https://i.ibb.co/wWhBTYn/Euro-Final.png" alt="Euro-Final" border="0">
+        </div>
+      </div>
+  </div>
+
+  </section>
+
+
+
+  <!-- super league section -->
+  <div class="uk-margin-large-top uk-width-medium-6-10 uk-container-center">
+    <section class="super_league">
+      <h2>The Super League</h2>
+      <blockquote id="superleague">
+        <!-- blockquote like the one in the intro -->
+        <p class="blockquotetext uk-margin-left">I see more a European league developing over time rather than one team going out of the country. The national leagues will survive but maybe in 10 years, you will have a European league."</p>
+        <span>Ars&egrave;ne Wenger, August 2009</span>
+      </blockquote>
+      <!-- an introduction to The Super League -->
+      <p>Ars&egrave;ne Wenger predicted a European Super League over 10 years ago and on April 18th 2021 his prediction came true. Despite many expecting it, the announcement of the European Super League shocked the football world and country alike.
+      </p>
+      <p>The owners of 12 European clubs, Arsenal, Chelsea, Liverpool, Manchester City, Manchester United and Tottenham alongside Atletico Madrid, Barcelona, Real Madrid, AC Milan, Inter Milan and Juventus, announced the formation of The Super
+        League, a rival for the UEFA Champions League.</p>
+      <p>The announcement sparked a frenzy across England and Europe with UK Prime Minister Boris Johnson, the Premier League and UEFA all condemning its formation.</p>
+      <p>A <a href="https://www.premierleague.com/news/2109307">Premier League statement</a> on April 18th criticised The Super League, stating: "The Premier League condemns any proposal that attacks the principles of open competition and
+        sporting merit which are at the heart of the domestic and European football pyramid."</p>
+      <p>"Fans of any club in England and across Europe can currently dream that their team may climb to the top and play against the best. We believe that the concept of a European Super League would destroy this dream."</p>
+      <p>The meritocracy of the football pyramid became a central argument against The Super League as it was announced that the founding members of the competition would be guaranteed entry, leaving only 5 spaces for teams to qualify based on
+        achievements in the prior season.</p>
+      <!-- outlining the format of The Super League -->
+      <p class="bold uk-margin-large-top">The Format</p>
+      <p>The European Super League was to include 20 clubs: AC Milan, Arsenal, Atletico Madrid, Barcelona, Chelsea, Inter Milan, Juventus, Liverpool, Manchester City, Manchester United, Real Madrid, Tottenham, 3 further founding members and 5 teams
+        who would qualify based on domestic performance over the previous season.</p>
+      <img src="https://i.ibb.co/YDPd4mB/superleagueteams.png" alt="superleagueteams" border="0">
+      <p>The 20 clubs would be split into 2 groups of 10 where each team would play each of the other teams in their group home and away. The top 3 teams from each group would progress into a playoff bracket at the quarter-final stage, whilst the 4th
+        and 5th placed teams from each group would compete in a two-legged playoff game to decide the remaining quarter-finalists.</p>
+      <p>The quarter-finals and semi-finals would be played as two-legged ties before a single fixture final would be played at a neutral venue in order to determine the winner of The Super League.</p>
+      <!-- outlining the justifications of The Super League -->
+      <p class="bold uk-margin-large-top">The Justification</p>
+      <p>A <a href="https://thesuperleague.com/press.html">press release</a> from The Super League sought to explain why the league was formed, stating: "The formation of the Super League comes at a time when the global pandemic has accelerated the
+        instability in the existing European football economic model.</p>
+      <p>Further, for a number of years, the Founding Clubs have had the objective of improving the quality and intensity of existing European competitions throughout each season, and of
+        creating a format for top clubs and players to compete on a regular basis."</p>
+      <p>The 12 founding clubs had accumulated in excess of &#163;4.3 billion of debt by the time The Super League was announced. A lack of matchday income due to no fans contributed significantly to the losses of these clubs whilst
+        operating costs and wages remained high despite cuts being made.</p>
+      <p>In his prediction of a super league, Arsene Wenger referenced money as a driving force, saying: "The way we are going financially is that even the money that will be coming in from the Champions League will not be enough for some clubs
+        because they spend too much money."</p>
+      <p>JP Morgan, a leading investment banking company, pledged &#163;2.8 billion to the founding clubs to help launch The Super League, allowing for the rebuilding of infrastructure and recovery from the pandemic.</p>
+      <!-- outlining the reaction to The Super League -->
+      <p class="bold uk-margin-large-top">The Reaction</p>
+      <p>The reaction to The Super League from fans and media alike was overwhelmingly negative. News broke during Sky Sports' Super Sunday and BT Sport's FA Cup Semi-Final coverage, sparking a <a
+          href="https://www.youtube.com/watch?v=NC08HPDlJlA">raw and emotional response</a> from the pundits on live television.</p>
+  </div>
+  <!-- switch to 80% to change the flow of the page since there has just been a lot of text above, also allows for embedded tweets to go on either side -->
+  <div class="uk-width-medium-8-10 uk-container-center">
+    <!-- grid with embedded tweet on the left and text on the right -->
+    <div class="uk-grid">
+      <div id="GaryTweet" class="vertical-align uk-width-large-1-3 uk-margin-bottom" style="overflow-X: hidden;">
+        <blockquote class="twitter-tweet tw-align-center">
+          <p lang="en" dir="ltr">😡 | &quot;I&#39;m a <a href="https://twitter.com/hashtag/MUFC?src=hash&amp;ref_src=twsrc%5Etfw">#MUFC</a> fan and I&#39;m absolutely disgusted.&quot;<br>💥 | &quot;They are an absolute joke.&quot;<a
+              href="https://twitter.com/GNev2?ref_src=twsrc%5Etfw">@GNev2</a> gives a brutally honest reaction to reports that England&#39;s biggest clubs are expected to be part of plans for a breakaway European Super League. <a
+              href="https://t.co/VfJccHgybc">pic.twitter.com/VfJccHgybc</a></p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://twitter.com/SkySportsPL/status/1383830563300077569?ref_src=twsrc%5Etfw">April 18, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div id="GaryText" class="vertical-align uk-width-large-2-3 uk-margin-bottom uk-container-center">
+        <p>Gary Neville immediately labelled The Super League "an absolute disgrace" and was particularly frustrated with the power the six English clubs had.</p>
+        <p>"The owners of this club [Manchester United], the owners of Liverpool, the owners of Chelsea, the owners of Manchester City, they are nothing to do with football in this country. There are a hundred odd years of history in this country
+          from fans that have lived and loved these clubs and they need protecting, the fans need protecting." Neville proclaimed.</p>
+        <p>"It is criminal. It is a criminal act against football fans in this country make no mistake about it. This is the biggest sport in the world, this is the biggest sport in this country and it is a criminal act against the fans, simple as
+          that." he continued.</p>
+        <p>"In the midst of a pandemic, an economic crisis, football clubs at National League level going bust nearly, furloughing players, clubs on the edge in League One and Two and these lot [the owners] are having Zoom calls about breaking away
+          and creating more greed."</p>
+      </div>
+      <!-- back to 60% in the centre for Leeds commentary -->
+      <div id="LeedsText" class="vertical-align uk-width-large-2-3 uk-margin-bottom uk-container-center">
+        <p>The day after news of The Super League broke, Liverpool travelled to Elland Road to face Leeds in the Premier League. Leeds fans gathered outside the ground to make their voices heard in opposition to The Super League, chanting and holding
+          up banners.</p>
+        <p>Amongst the protests an airplane flew over the stadium with a banner attached saying "#SayNoToSuper League".</p>
+        <p>The Leeds players themselves warmed up in t-shirts which read "Earn It" on the front and "Football Is For The Fans" on the back, sending a clear message of opposition.</p>
+      </div>
+      <!-- grid with text on the left nad embedded tweet on the right -->
+      <div id="BamfordText" class="vertical-align uk-width-large-2-3 uk-margin-bottom">
+        <p>Patrick Bamford, Leeds United striker, discussed the uproar against The Super League in a post-match interview, saying: "It is amazing the things they are talking about, I cannot quite comprehend. It is just amazing the amount of uproar as
+          well that comes into the game when somebodies' pockets are being hurt."</p>
+        <p>"It is a shame it is not like that with other things that go wrong at the minute with racism and stuff like that."</p>
+        <p>He continued with his own thoughts on the league, stating: "We [the players] are like fans really like everyone else, I cannot believe it and talking about it I do not know what is going to happen and I am in shock "</p>
+        <p>"Without the fans every single club would be pretty much nothing so I think that it is important that we stand our ground and show that football is for the fans and keep it that way."</p>
+      </div>
+      <div id="BamfordTweet" class="vertical-align uk-width-large-1-3 uk-margin-bottom">
+        <blockquote class="twitter-tweet tw-align-center">
+          <p lang="en" dir="ltr">&quot;I haven&#39;t seen one football fan who is happy about the decision and football is ultimately for the fans.&quot;<br><br>Patrick Bamford gives his thoughts on the proposed breakaway European Super League after
+            <a href="https://twitter.com/hashtag/LUFC?src=hash&amp;ref_src=twsrc%5Etfw">#LUFC</a>&#39;s draw with <a href="https://twitter.com/hashtag/LFC?src=hash&amp;ref_src=twsrc%5Etfw">#LFC</a>. <a
+              href="https://t.co/qBTirdetBg">pic.twitter.com/qBTirdetBg</a>
+          </p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://twitter.com/SkySportsPL/status/1384252565139771398?ref_src=twsrc%5Etfw">April 19, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+  <!-- Michael Cox's view to provide balance -->
+  <!-- since the reaction to the ESL was so overtly negative, it was tough to find many authorities who were advocating, or at least respecting it -->
+  <!-- side note - despite a lot of advanced searching on twitter, I struggled to find a tweet with more than 500 likes which supported the ESL in any way -->
+  <div class="uk-width-medium-6-10 uk-container-center">
+    <p>One of the few not to instantly dismiss The Super League was Michael Cox of The Athletic, pointing out the flaws in the current system: "Use any measure you like - points totals, goal difference, titles, wage bills - and inspect the trajectory
+      of major European leagues over the past two decades, and it becomes clear we are experiencing staggering, rampant inequality completely off the scale."</p>
+    <p>Bayern Munich have won 9 Bundesligas in a row, Juventus have won 9 of the last 10 Serie A titles, Paris Saint Germain have won Ligue Un 7 of the last 9 years, Barcelona have won 5 La Liga's in 10 years and Manchester City have 5 Premier League
+      titles in the past decade.</p>
+    <p>While Cox's argument is well-founded, the sheer backlash from supporters in England became so intense that any logical justification of The Super League received little thought.</p>
+    <p>This same backlash helped to sway FIFA's stance on The Super League, which they had once backed following an approach from Spanish finance consortium A22 in 2019. The Super League required the support of FIFA to launch in April, and their
+      U-turn helped seal the league's fate.</p>
+    <!-- intro to the documentary to announce the run time -->
+    <p class="uk-margin-large-top">A documentary about what fans thought of The Super League. Run time 11 minutes 9 seconds.</p>
+  </div>
+  <!-- fullscreen video -->
+  <div class"uk-width-1-1 uk-container-center uk-margin-large-top uk-margin-large-bottom " style=" height: 100vh;">
+    <iframe class="YTVid" width="100%" src="https://www.youtube.com/embed/X9Zm2bpcpnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  </section>
+
+  <!-- section on ownership protests -->
+  <div class="uk-width-medium-6-10 uk-container-center">
+    <section class="ownership_protests uk-margin-large-top">
+      <h2>Ownership Protests</h2>
+      <p id="ownershipprotests">The uproar from football fans towards The Super League spilled over into deeper grievances for both Arsenal and Manchester United supporters. As a result, mass protests ensued at both clubs as supporters sought to
+        voice their displeasure towards their owners.</p>
+      <!-- Arsenal section of the ownership protests -->
+      <p class="bold uk-margin-large-top">Arsenal</p>
+      <p>Thousands gathered outside Emirates Stadium ahead of Arsenal vs Everton on April 23rd to speak out against Arsenal's owner Stan Kroenke.</p>
+      <p>Ian Wright, former Arsenal striker, gave his support for the protestors outside the Emirates, <a href="https://www.youtube.com/watch?v=lvr5bjGOUsc">telling DAZN</a>: "I stand with them."</p>
+      <p>"We are talking about a silent owner. Since he has been at our club he has not invested in our club properly. The way they buy the club, the way they serviced the debt with this club, the fact they wanted to go into this competition [The
+        Super League], it is like they have given up on us."</p>
+      <p>A large group of supporters began the protest walking around the stadium holding up signs and lighting flares, with loud chants including "we want our Arsenal back" and "get out of our club."</p>
+      <p class="uk-margin-large-bottom">The supporters eventually gathered outside the main entrance to the stadium in full voice.</p>
+  </div>
+  <!-- fullscreen video -->
+  <!-- I was submitting Sandbox Coursework 3 on the day of the Arsenal vs Everton protests so I was unable to get footage myself or obtain any to the scale I wanted -->
+  <div class"uk-width-1-1 uk-container-center" style="height: 100vh;">
+    <iframe class="YTVid" width="100%" src="https://www.youtube.com/embed/JFWbWAsaSdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <div class="uk-width-medium-6-10 uk-container-center uk-margin-large-top">
+    <p>During the protests, Daniel Ek, co-founder and CEO of Spotify, announced his interest to buy Arsenal Football Club. In the ensuing weeks, Daniel Ek submitted a formal offer to the Kroenke family, supported by consortium partners Thierry Henry,
+      Dennis Bergkamp and Patrick Viera.</p>
+    <p>The offer was rejected as the Kroenke's 'don't need the money' but Ek insisted his offer would remain on the table should they ever want to sell.</p>
+    <div class="uk-margin-large-top uk-margin-large-bottom">
+      <!-- embedded tweet -->
+      <blockquote class="twitter-tweet tw-align-center" data-width="400">
+        <p lang="en" dir="ltr">Following reports today I want to correct the record with attached statement <a href="https://t.co/CzfF0Y76K4">pic.twitter.com/CzfF0Y76K4</a></p>&mdash; Daniel Ek (@eldsjal) <a
+          href="https://twitter.com/eldsjal/status/1393644895357833217?ref_src=twsrc%5Etfw">May 15, 2021</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <p>Thierry Henry opened up about the bid on <a href="https://www.youtube.com/watch?v=jf1TXJ7zoJA">Monday Night Football</a>, saying: "Daniel has been an Arsenal fan for a very long time. He approached us, we listened to him, and when we knew
+      first and foremost that he wanted to include the fans we met the Arsenal Supporter's Trust and told them what we wanted to do."</p>
+    <p>"To bring them back on board being part of the meetings, knowing what is happening. He wants to re-inject the Arsenal DNA, the identity that I think for me is long gone" he added.</p>
+    <p>Protests continued outside the Emirates for games against Villarreal and West Brom, continuing to carry across the 'Kroenke Out' message.</p>
+    <p>With fans welcomed back to the Emirates for the final game of the season on May 23rd, hundreds gathered in the pouring rain to <a href="https://www.islingtongazette.co.uk/sport/arsenal-protest-ahead-of-final-match-7995618">continue the
+        protests</a> against Stan Kroenke in the hope of forcing change.</p>
+  </div>
+  <!-- full screen image to break up the text -->
+  <div class="uk-width-1-1 uk-container-center uk-margin-large-top uk-margin-large-bottom">
+    <img src="https://i.ibb.co/hRX22Pb/Kroenke-Out-Brighton.jpg" alt="Kroenke-Out-Brighton" border="0">
+    <p class="caption">Arsenal fans protesting outside the Emirates ahead of Brighton game (Credit: Adam Perry)</p>
+  </div>
+
+  <!-- Manchester United section of ownership protests -->
+  <div class="uk-width-medium-6-10 uk-container-center">
+    <p class="bold uk-margin-large-top">Manchester United</p>
+    <p>Manchester United's game against Liverpool became the heart of a mass protest at Old Trafford on May 2nd with United fans calling for owners, the Glazers, to sell the club following their agreement to join The Super League.</p>
+    <p>Thousands of fans descended on Old Trafford chanting against the Glazers alongside banners and flares before a small number eventually breaking onto the pitch.</p>
+    <p class="uk-margin-large-bottom">2 miles away, in the city centre, fans swarmed The Lowry Hotel where Manchester United players were staying, preventing them from leaving to their team bus to travel to the game.</p>
+  </div>
+  <!-- Sky News overview of the protests -->
+  <!-- I wanted to show fans on the pitch at Old Trafford to supplement my other footage recieved outside the ground from Adam Blaize -->
+  <div class"uk-width-1-1 uk-container-center" style="height: 100vh;">
+    <iframe class="YTVid" width="100%" src="https://www.youtube.com/embed/3XPegIsIJfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="uk-width-medium-6-10 uk-container-center uk-margin-large-top">
+    <p>Adam Blaize, a Manchester United fan at the protest, discussed his main issue with the owners, stating: "Manchester United were a debt-free club since 1931 and the Glazers bought them with loan payments and the debt has been rising."</p>
+    <p>"They will say there has been investment in the club in different areas but it has been poor investment" he added.</p>
+    <p>The impact of the protest was overshadowed somewhat by a small number of individuals carrying out acts of violence against police and staff.</p>
+    <p>One police officer suffered a slash to the face, almost damaging his eye. A man was arrested on suspicion of assault but has since been released on bail with Greater Manchester Police urging witnesses to come forward.</p>
+    <p>The game itself was eventually rearranged for the safety of the players and staff, being played on May 13th.</p>
+  </div>
+  <!-- autoplay and loop fullscreen video showing the protest -->
+  <!-- on mobile it does not autoplay and instead gives the reader the option to play the video -->
+  <div class="uk-width-1-1 uk-container-center ownership_protests uk-margin-large-top">
+    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/qxfcvd?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay"
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+    <p class="caption">Manchester United fans protesting outside Old Trafford ahead of Liverpool game (Credit: Adam Blaize)</p>
+  </div>
+
+  <div class="uk-article uk-width-medium-6-10 uk-container-center uk-margin-large-top">
+    <p><a href="https://www.bbc.co.uk/sport/football/57106079">Another protest broke out</a> on the day of the rearranged fixture with hundreds continuing to voice their grievances outside the ground. The protest was on a smaller scale but the anger
+      of the fans remained.</p>
+    <!-- embedded tweets -->
+    <div class="uk-margin-large-top uk-margin-large-bottom">
+      <blockquote class="twitter-tweet tw-align-center" data-width="400">
+        <p lang="en" dir="ltr">Man Utd fans stage colourful anti-Glazer protest inside Old Trafford vs Fulham<a href="https://t.co/EGhDG1uopK">https://t.co/EGhDG1uopK</a> <a href="https://t.co/tRrfPsM0A9">pic.twitter.com/tRrfPsM0A9</a></p>&mdash;
+        Mirror Football (@MirrorFootball) <a href="https://twitter.com/MirrorFootball/status/1394705199009259521?ref_src=twsrc%5Etfw">May 18, 2021</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <p class="uk-margin-large-bottom">Manchester United welcomed back 10,000 fans into Old Trafford for their final home game of the Premier League season on May 18th, during which supporters held up signs reading "GO - Glazers Out" as players walked
+      onto the pitch.</p>
+    <!-- intro to the ownership protests documentary with run time warning -->
+    <p class="uk-margin-bottom">A documentary about the ownership protests. Run time 7 minutes 39 seconds.</p>
+  </div>
+  <!-- documentary video -->
+  <div class"uk-width-1-1 uk-container-center" style="height: 100vh;">
+    <iframe class="YTVid" width="100%" src="https://www.youtube.com/embed/f6F_dEvP8mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  </section>
+
+
+
+  <!-- data section -->
+  <section class="data uk-margin-large-top">
+    <div class="uk-width-medium-6-10 uk-container-center">
+      <h2>Impact of Fans on the pitch</h2>
+      <p id="OnThePitch">Over the 2019/20 and 2020/21 seasons, Premier League teams who have played across both campaigns played between 30 and 35 games in front of fans, and between 41 and 46 games without fans.</p>
+      <p class="uk-margin-large-bottom">The trend amongst Premier League teams has been a decrease in home performance without fans, and an increase in away performance.</p>
+    </div>
+    <!-- wider container to show larger charts side by side -->
+    <div class="uk-width-8-10 uk-container-center">
+      <!-- grid stacks when screen size is lowered so the charts appear one above the other -->
+      <div class="uk-grid">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/NCC1cbd/With-Fans-Scatter-PPG.jpg" alt="With-Fans-Scatter-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2 uk-grid-match"><img src="https://i.ibb.co/6YDmMLc/Without-Fans-Scatter-PPG.jpg" alt="Without-Fans-Scatter-PPG" border="0"></div>
+      </div>
+    </div>
+    <!-- 60% view width for text -->
+    <div class="uk-width-medium-6-10 uk-container-center">
+      <p class="uk-margin-large-top">Jonathan Rhodes, Sport Psychologist, explained the discrepancy between home form and away form in a typical season with fans, saying: "There is usually a home advantage because of an increase in motivation and
+        thus effort due to increased
+        arousal and mutual support."</p>
+      <p>Rhodes' suggestion as to why the difference between home and away performance has been altered over the past two seasons is that "players need anxiety and this has been limited in home matches and enhanced in away performance."</p>
+      <p>Emily Collett, a fellow Sport Psychologist, suggested that a factor in this change is "the crowd having a possible influence on refereeing" impacting both the home and away team.</p>
+      <p class="uk-margin-large-bottom">She also highlighted the players' will to play in front of fans: "A lot of players this season have mentioned missing fans and cannot wait to perform in front of fans, and the change of atmosphere, as well as
+        the other factors mentioned likely had a huge impact on performance as we have seen this season."</p>
+
+      <p class="uk-margin-bottom" style="text-align: center;">See how each Premier League team fared in 2019/20 and 2020/21:</p>
+    </div>
+    <!-- container for interactive data -->
+    <div class="border_area uk-margin-large-bottom uk-width-8-10 uk-container-center">
+      <!-- dropdown menu to select teams -->
+      <div class="dropdown" style="text-align: center;">
+        <select id="team">
+          <option disabled hidden selected>Select a team</option>
+          <option value="Arsenal">Arsenal</option>
+          <option value="AstonVilla">Aston Villa</option>
+          <option value="Brighton">Brighton and Hove Albion</option>
+          <option value="Burnley">Burnley</option>
+          <option value="Chelsea">Chelsea</option>
+          <option value="CrystalPalace">Crystal Palace</option>
+          <option value="Everton">Everton</option>
+          <option value="Leicester">Leicester City</option>
+          <option value="Liverpool">Liverpool</option>
+          <option value="ManCity">Manchester City</option>
+          <option value="ManUnited">Manchester United</option>
+          <option value="Newcastle">Newcastle United</option>
+          <option value="SheffieldUnited">Sheffield United</option>
+          <option value="Saints">Southampton</option>
+          <option value="Spurs">Tottenham Hotspur</option>
+          <option value="WestHam">West Ham United</option>
+          <option value="Wolves">Wolverhampton Wanderers</option>
+        </select>
+      </div>
+      <!-- displays two charts side by side for each team of with and without fans as well as a fan (fun) fact -->
+      <!-- colour of the charts determined by each team's colours -->
+      <!-- stackable grid for mobile -->
+      <!-- contains information on the teams that spent BOTH the 2019/20 and 2020/21 seasons in the Premier League -->
+      <div id="Arsenal" class="uk-grid Data uk-margin-large-top">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/YbcCLzP/Arsenal-Home-PPG.jpg" alt="Arsenal-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/K9NW7dq/Arsenal-Away-PPG.jpg" alt="Arsenal-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Arsenal's total of 28 points at home in the 2020/21 season was their worst total since 1994/95 (27 points)</p>
+        </div>
+      </div>
+      <div id="AstonVilla" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/ftTXszH/Villa-Home-PPG.jpg" alt="Villa-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/VN0tvSZ/Villa-Away-PPG.jpg" alt="Villa-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>2020/21 was Aston Villa's best Premier League season for points (55) since the 2009/10 season (64)</p>
+        </div>
+      </div>
+      <div id="Brighton" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/QX2jQCL/Brighton-Home-PPG.jpg" alt="Brighton-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/RbNSKmr/Brighton-Away-PPG.jpg" alt="Brighton-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Brighton scored more goals in the 2020/21 season (40) than they did in any of their other Premier League seasons</p>
+        </div>
+      </div>
+      <div id="Burnley" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/f03cHc8/Burnley-Home-PPG.jpg" alt="Burnley-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/jgJLhWr/Burnley-Away-PPG.jpg" alt="Burnley-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>2020/21 was Burnley's worst home season in the Premier League for points (18)</p>
+        </div>
+      </div>
+      <div id="Chelsea" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/NS980fk/Chelsea-Home-PPG.jpg" alt="Chelsea-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/LJb3n8n/Chelsea-Away-PPG.jpg" alt="Chelsea-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Chelsea's total of 58 goals scored in 2020/21 was their worst total since the 1999/00 season (53)</p>
+        </div>
+      </div>
+      <div id="CrystalPalace" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/2ck1Zf0/Crystal-Palace-Home-PPG.jpg" alt="Crystal-Palace-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/JQmVKBr/Cystal-Palace-Away-PPG.jpg" alt="Cystal-Palace-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Cystal Palace conceded 66 goals in the 2020/21 Premier League season, their highest total since returning to the top flight in 2013/14</p>
+        </div>
+      </div>
+      <div id="Everton" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/ZXjvk1Z/Everton-Home-PPG.jpg" alt="Everton-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/ZckzPD5/Everton-Away-PPG.jpg" alt="Everton-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Everton's 37 away points and 11 away wins in the 2020/21 season is their best away tally since the Premier League began</p>
+        </div>
+      </div>
+      <div id="Leicester" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/g3xRVvP/Leicester-Home-PPG.jpg" alt="Leicester-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/SPgFCf6/Leicester-Away-PPG.jpg" alt="Leicester-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Leicester City's 68 goals in the 2020/21 season is the same number of goals as they scored in their title winning season 2014/15</p>
+        </div>
+      </div>
+      <div id="Liverpool" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/7kdPkNR/Liverpool-Away-PPG.jpg" alt="Liverpool-Away-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/p4M4f3B/Liverpool-Home-PPG.jpg" alt="Liverpool-Home-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Liverpool's 1-0 loss to Burnley on January 21st 2021 was their first league loss at Anfield since April 2017, ending a 68 game streak of not losing at home</p>
+        </div>
+      </div>
+      <div id="ManCity" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/nCNsz2Y/Man-City-Home-PPG.jpg" alt="Man-City-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/hYQWMGJ/Man-City-Away-PPG.jpg" alt="Man-City-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Manchester City's total of 83 goals scored in 2020/21 was their worst since Pep Guardiola's first season in charge in 2016/17 (80)</p>
+        </div>
+      </div>
+      <div id="ManUnited" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/42CfMdp/Man-United-Home-PPG.jpg" alt="Man-United-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/37zdfhS/Man-United-Away-PPG.jpg" alt="Man-United-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Manchester United's total of 73 goals in the 2020/21 season was their highest since 2012/13, their last Premier League title (86)</p>
+        </div>
+      </div>
+      <div id="Newcastle" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/Gd8VmLf/Newcastle-Home-PPG.jpg" alt="Newcastle-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/ckstjN9/Newcastle-Away-PPG.jpg" alt="Newcastle-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Newcastle's 22 points away from home in 2020/21 was their best tally since the 2013/14 season (also 22)</p>
+        </div>
+      </div>
+      <div id="SheffieldUnited" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/py7WdXf/Sheffield-United-Home-PPG.jpg" alt="Sheffield-United-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/z6Xgjyg/Sheffield-United-Away-PPG.jpg" alt="Sheffield-United-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Sheffield United's total of 23 points in the 2020/21 season was the 7th lowest in Premier League history</p>
+        </div>
+      </div>
+      <div id="Saints" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/kXp8J3b/Saints-Home-PPG.jpg" alt="Saints-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/9vkd3Tn/Saints-Away-PPG.jpg" alt="Saints-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Southampton conceded 68 goals in the 2020/21 season, their worst record since the Premier League began</p>
+        </div>
+      </div>
+      <div id="Spurs" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/LQ3DRCb/Spurs-Home-PPG.jpg" alt="Spurs-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/LgDqpGY/Spurs-Away-PPG.jpg" alt="Spurs-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>Tottenham's 7th place finish in 2020/21 was their worst finish since the 2008/09 season (8th)</p>
+        </div>
+      </div>
+      <div id="WestHam" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/bXDFHLS/West-Ham-Home-PPG.jpg" alt="West-Ham-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/TT3Cckf/West-Ham-Away-PPG.jpg" alt="West-Ham-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>West Ham's 6th place finish in 2020/21 was their best since the 1998/99 season (5th)</p>
+        </div>
+      </div>
+      <div id="Wolves" class="uk-grid Data">
+        <div class="uk-width-medium-1-2 uk-grid-match uk-margin-bottom"><img src="https://i.ibb.co/4Sp5bQ3/Wolves-Home-PPG.jpg" alt="Wolves-Home-PPG" border="0"></div>
+        <div class="uk-width-medium-1-2"><img src="https://i.ibb.co/JkrhSHD/Wolves-Away-PPG.jpg" alt="Wolves-Away-PPG" border="0"></div>
+        <div class="fanFact uk-margin-large-top">
+          <p class="white"><b>Fan Fact: </b>In 2020/21 Wolves recorded their worst wins (12), goals scored (36) and points total (45) since their return to the top flight in 2018/19</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // when the 'team' id (dropdown menu) is changed
+        $("#team").on('change', function() {
+          //  alert($(this).val()); - this was for testing to make sure each team was showing up correctly in the console
+          // current data being displayed is hidden
+          $(".Data").hide();
+          //the value selected in the dropdown's data is then faded in
+          $("#" + $(this).val()).fadeIn(700);
+        }).change();
+      });
+    </script>
+  </section>
+
+  <!-- summer and beyond/concluding section -->
+  <div class="uk-width-medium-6-10 uk-container-center">
+    <section>
+      <h2>Summer and Beyond</h2>
+      <p id="whatsnext" class="uk-margin-top">Since the end of the Premier League season, the European Championships have taken England by storm.</p>
+      <p>Wembley Stadium hosted eight games in total including all but one of England's games en route to the final. Both Semi-Finals and the Final, between England and Italy, were played at Wembley with the final reaching a capacity of 67,173.</p>
+  </div>
+  <!-- fullscreen image -->
+  <div class="uk-width-1-1 uk-container-center uk-margin-large-top uk-margin-large-bottom">
+    <img src="https://i.ibb.co/fnBn8q6/Wembley-Euros-Enlgland.png" alt="Wembley-Euros-Enlgland" border="0">
+    <p class="caption">England fans at Wembley for the European Championships (Credit: Jacob Ranson)</p>
+  </div>
+  <div class="uk-width-medium-6-10 uk-container-center">
+    <!-- I felt it important to acknowledge the negatives of the Euro final in particular -->
+    <!-- whilst the piece gives a voice mostly of the general and passionate football fan, football fans are not perfect as a collective -->
+    <p>Despite the increased fan attendance at Wembley representing a transition towards normality for England, the European Championship Final shone a negative light on the return of fans to sporting venues.</p>
+    <p>Thousands of fans forced their way into the stadium without a ticket, resulting in several stewards getting injured, whilst family members and guests of the two teams were abused and forced to leave their seats. In the process, Covid-19
+      checkpoints were breached as well as Italy fans' bio-secure bubble which allowed them to travel to the game.</p>
+    <p>Following the Euro Final, the Community Shield curtain raiser between Manchester City and Leicester City will be the next major football match to be played at Wembley, kicking off the 2021/22 season.</p>
+    <p>David Elleray was pleased for Wembley to host fans once again, <a href="https://www.thefa.com/news/2021/jul/22/20210722-paul-tierney-to-referee-fa-community-shield-2021">stating</a>: "We are delighted at the prospect of the 2021 FA Community
+      Shield being played in a partially-full Wembley Stadium and, with this return to 'normality' match."</p>
+    <p class="uk-margin-large-bottom">It has been a long journey for football fans, but the beautiful game is nearly back.</p>
+  </div>
+  </section>
+
+  <!-- footer -->
+  <section id="footer">
+    <div class="uk-grid uk-width-7-10 uk-container-center">
+      <!-- 3 columns side by side grid -->
+      <!-- stacks on mobile -->
+      <div class="uk-width-medium-1-5 uk-margin-bottom">
+        <!-- acknowledgements -->
+        <!-- as a thank you for their help, I have given each of the interviewees a social link of their choice -->
+        <h5 class="uk-margin-top">Acknowledgements</h5>
+        <h6>Adam Blaize - <a href="https://www.youtube.com/c/AdamBlaizeLives"><img src="https://i.ibb.co/r5nFLr0/youtube-Icon-BB.png" alt="youtube-Icon-BB" border="0" class="footerIcon"></a></h6>
+        <h6>Dominic Taylor - <a href="https://twitter.com/dominictaylor6_"><img src="https://i.ibb.co/Sn53SMH/twitter-Icon-BB.png" alt="twitter-Icon-BB" border="0" class="footerIcon"></a></h6>
+        <h6>Emily Collett - <a href="https://www.linkedin.com/in/emily-collett-2a8383138"><img src="https://i.ibb.co/xGYBVzD/linkedin-Icon-BB.png" alt="linkedin-Icon-BB" border="0" class="footerIcon"></a></h6>
+        <h6>Jacob Ranson - <a href="https://twitter.com/JacobRanson27"><img src="https://i.ibb.co/Sn53SMH/twitter-Icon-BB.png" alt="twitter-Icon-BB" border="0" class="footerIcon"></a></h6>
+        <h6>Jonathan Rhodes - <a href="https://twitter.com/rhodespsych?lang=en"><img src="https://i.ibb.co/Sn53SMH/twitter-Icon-BB.png" alt="twitter-Icon-BB" border="0" class="footerIcon"></a></h6>
+        <h6>Marlon Ayling-Allen - <a href="https://twitter.com/MAAjournalism"><img src="https://i.ibb.co/Sn53SMH/twitter-Icon-BB.png" alt="twitter-Icon-BB" border="0" class="footerIcon"></a></h6>
+      </div>
+
+      <div class="uk-width-medium-1-5 uk-margin-bottom uk-margin-left uk-margin-right uk-container">
+        <!-- share icons, same as at the top of the page -->
+        <h5 class="uk-margin-top">Share</h5>
+        <h6>Twitter - <a
+            href="https://twitter.com/intent/tweet?url=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html&text=Football%20is%20nothing%20without%20fans:%20The%20journey%20of%20football%20fans%20during%20the%20pandemic%0A%0ACheck%20out%20@Ap3Journalism's%20article:"><img
+              src="https://i.ibb.co/Sn53SMH/twitter-Icon-BB.png" alt="twitter-Icon-BB" border="0" class="footerIcon uk-margin-right"></a>
+          <h6>
+            <h6>Facebook - <a href="https://www.facebook.com/sharer/sharer.php?u=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html"><img src="https://i.ibb.co/Lh9ywYW/facebook-Icon-BB.png" alt="facebook-Icon-BB" border="0"
+                  class="footerIcon"></a></h6>
+            <h6>WhatsApp - <a href="https://api.whatsapp.com/send?text=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html"><img src="https://i.ibb.co/LN02h0v/whatsapp-Icon-BB.png" alt="whatsapp-Icon-BB" border="0"
+                  class="footerIcon"></a></h6>
+            <h6>LinkedIn - <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html&title=&summary=&source="><img src="https://i.ibb.co/xGYBVzD/linkedin-Icon-BB.png"
+                  alt="linkedin-Icon-BB" border="0" class="footerIcon uk-margin-right"></a></h6>
+            <h6>Email - <a href="mailto:?&subject=&body=http://doc.gold.ac.uk/~aperr003/footballisnothingwithoutfans.html"><img src="https://i.ibb.co/kDT3xhH/email-Icon-BB.png" alt="email-Icon-BB" border="0" class="footerIcon"></a></h6>
+      </div>
+
+      <div class="uk-width-medium-1-2 uk-margin-bottom">
+        <!-- about me section -->
+        <h5 class="uk-margin-top">About Me</h5>
+        <h6 style="line-height: 1.4;">I'm Adam Perry, an MA/MSC Digital Journalism student at Goldsmiths, University of London. Writing, media, charts and code were made by myself unless specified.</h6>
+        <h6 style="line-height: 1.4;">All interviews were conducted in compliance with Covid-19 regulations.</h6>
+        <!-- social links for the author -->
+        <h6 class="uk-visible-large" style="text-align: left; line-height: 1.4;">You can find me here: <span style="float:right;"><a href="https://twitter.com/Ap3Journalism"><img src="https://i.ibb.co/Sn53SMH/twitter-Icon-BB.png"
+                alt="twitter-Icon-BB" border="0" class="footerIcon uk-margin-left uk-margin-right"></a>
+            <a href="https://www.linkedin.com/in/adam-perry-bab31b1b3/"><img src="https://i.ibb.co/xGYBVzD/linkedin-Icon-BB.png" alt="linkedin-Icon-BB" border="0" class="footerIcon uk-margin-right"></a>
+            <a href="mailto:adamperry_99@outlook.com"><img src="https://i.ibb.co/kDT3xhH/email-Icon-BB.png" alt="email-Icon-BB" border="0" class="footerIcon"></a> </span></h6>
+        <!-- mobile version of social links for the author, changed allignements -->
+        <h6 class="uk-hidden-large" style="text-align: center; line-height: 1.4;">You can find me here: </h6>
+        <h6 class="uk-hidden-large" style="text-align: center; line-height: 1.4;"><a href="https://twitter.com/Ap3Journalism"><img src="https://i.ibb.co/Sn53SMH/twitter-Icon-BB.png" alt="twitter-Icon-BB" border="0"
+              class="footerIcon uk-margin-left uk-margin-right"></a>
+          <a href="https://www.linkedin.com/in/adam-perry-bab31b1b3/"><img src="https://i.ibb.co/xGYBVzD/linkedin-Icon-BB.png" alt="linkedin-Icon-BB" border="0" class="footerIcon uk-margin-right"></a>
+          <a href="mailto:adamperry_99@outlook.com"><img src="https://i.ibb.co/kDT3xhH/email-Icon-BB.png" alt="email-Icon-BB" border="0" class="footerIcon"></a>
+        </h6>
+        <!-- a link to a few other works by the author -->
+        <!-- I decided to showcase my Sandbox Coursework 3 which showcases an analytical data driven piece, a piece on Bukayo Saka and racial abuse from the Islington Gazette, and my personal blog where I produce weekly articles -->
+        <h6 class="uk-visible-large" style="text-align: left;line-height: 1.4;">Other works: <span style="float:right;"><a class="FT" href="http://doc.gold.ac.uk/~aperr003/sandbox/SandboxCW3/riseoftheleftfootedcb.html">The Rise of the Left Footed
+              Centre Back</a></span>
+          <h6>
+            <h6 class="uk-visible-large" style="text-align: right;line-height: 1.4;"><a class="FT" href="https://www.islingtongazette.co.uk/sport/bukayo-saka-became-a-star-for-england-8138368">England star Saka has the Heart of a Lion</a></h6>
+            <h6 class="uk-visible-large" style="text-align: right;line-height: 1.4;"><a class="FT" href="https://adamperry19999.wixsite.com/apjournalism">AP3 Journalism</a></h6>
+            <!-- mobile version of other works by the author, changed allignements -->
+            <h6 class="uk-hidden-large" style="text-align: center;line-height: 1.4;">Other works: </h6>
+            <h6 class="uk-hidden-large" style="text-align: center;line-height: 1.4;"> <a class="FT" href="http://doc.gold.ac.uk/~aperr003/sandbox/SandboxCW3/riseoftheleftfootedcb.html">The Rise of the Left Footed Centre Back</a>
+            <h6 class="uk-hidden-large" style="text-align: center;line-height: 1.4;"><a class="FT" href="https://www.islingtongazette.co.uk/sport/bukayo-saka-became-a-star-for-england-8138368">England star Saka has the Heart of a Lion</a></h6>
+            <h6 class="uk-hidden-large" style="text-align: center;line-height: 1.4;"><a class="FT" href="https://adamperry19999.wixsite.com/apjournalism">AP3 Journalism</a></h6>
+      </div>
+    </div>
+  </section>
+  </div>
+
+
+
+</body>
+
+</html>
