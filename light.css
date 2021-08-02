@@ -1,0 +1,444 @@
+/* default light theme stylesheet */
+
+/* overlay for the header of the page on desktop */
+/* 100% width and height to fit the readers entire screen */
+.uk-overlay {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ensures the navbar is stacked on top of other elements */
+.uk-navbar {
+  z-index: 100;
+}
+
+/* mobile navbar adjustments I to keep position and prevent side scroll */
+.mobilenav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* hide mobile nav dropdown links by default on page load */
+.mobilenav #scrollsections {
+  display: none;
+}
+
+/* text adjustments for mobile nav */
+.mobilenav a {
+  color: white;
+  padding: 14px;
+  display: block;
+}
+
+/* icon adjustments for mobile nav */
+.mobilenav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -6px;
+}
+
+/* changes hover to light red color */
+.mobilenav a:hover {
+  background-color: #ff4949;
+}
+
+/* main text */
+/* went with the default font html/css give you as I quite liked it in comparison to others and is websafe */
+p {
+  color: black;
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+
+/* smaller text for mobile */
+@media only screen and (max-width:900px) {
+  p {
+    font-size: 1.1em;
+  }
+}
+
+/* bold text */
+p.bold {
+  font-weight: bold;
+}
+
+/* caption text */
+p.caption {
+  font-size: 1em;
+  text-align: right;
+  padding-right: 2%;
+}
+
+/* title text with google font */
+h1 {
+  font-family: 'Bree Serif', serif;
+}
+
+/* larger heading for main title */
+h1.uk-heading-large {
+  color: black;
+  line-height: 0.9em;
+  font-weight: bold;
+  font-size: 12vh;
+}
+
+/* smaller heading for secondary part of  the title */
+h1.uk-heading-small {
+  color: white;
+  font-size: 4vh;
+}
+
+/* changing sizes of h tags for mobile */
+@media only screen and (max-width:900px) {
+  h1.uk-heading-large {
+    font-size: 5vh;
+  }
+
+  h1.uk-heading-small {
+    font-size: 3vh;
+  }
+
+  h3 {
+    font-size: 2.5vh
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+}
+
+/* section titles */
+h2 {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* for byline */
+h3 {
+  color: white;
+  font-family: 'Bree Serif', serif;
+  font-size: 3vh;
+}
+
+/* for timeline headings */
+h4 {
+  font-size: 1.35em;
+  font-weight: bold;
+  color: white;
+}
+
+/* h5, h6 text for footer */
+h5 {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+h6 {
+  color: white;
+  font-size: 1em;
+  line-height: 0.6;
+}
+
+/* white text */
+p.white {
+  color: white;
+}
+
+/* hyperlink colour */
+/* had it as red but felt quite offensive so went with blue instead */
+a {
+  color: #0555A5;
+}
+
+/* the main red on link hover */
+a:hover {
+  color: #ff4949;
+}
+
+/* white hyperlinks on the timeline, less bold */
+a.TL {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* usual red for hover */
+a.TL:hover {
+  color: #ff4949;
+}
+
+/* footer links, samw as TL */
+a.FT {
+  color: #FFFFFF;
+}
+a.FT:hover {
+  color: #ff4949;
+}
+
+/* selects all elements for timeline with a border-box */
+* {
+  box-sizing: border-box;
+}
+
+/* black background for timeline */
+.timelinebg {
+  background-color: black;
+}
+
+/* timeline container */
+.timeline {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* timeline divider down the centre */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: black;
+  width: 50%;
+}
+
+/* timeline dots */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff4949;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* left container */
+.left {
+  left: 0;
+}
+
+/* right container */
+.right {
+  left: 50%;
+}
+
+/* right arrows */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid black;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #ff4949;
+}
+
+/* left arrows */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ff4949 transparent transparent;
+}
+
+/* centre odd circles */
+.right::after {
+  left: -16px;
+}
+
+/* text box for content */
+.content {
+  padding: 10px 20px;
+  background-color: black;
+  position: relative;
+  border-radius: 15px;
+  border: 4px solid #ff4949;
+  /*  opacity: 0;
+  transition: 2s ease-in; */
+}
+
+/* mobile adjustments for timeline */
+@media screen and (max-width: 900px) {
+
+    /* full size width */
+    .timeline {
+      max-width: 100%;
+    }
+
+  /* shift timeline bar to the left */
+  .timeline::after {
+    left: 30px;
+  }
+
+  /* container adjustments */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* arrow adjustments */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* circle adjustments */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* text box adjustments */
+  .right {
+    left: 0%;
+  }
+}
+
+/* quote box style */
+blockquote {
+  font-size: 1.4em;
+  margin: 3% auto;
+  font-style: italic;
+  color: black;
+  padding: 1.2em 5%;
+  border-left: 8px solid black;
+  line-height: 1.4;
+  position: relative;
+}
+
+/* quote text */
+.blockquotetext {
+  line-height: 1.2;
+}
+
+/* speech mark to open quote */
+blockquote::before {
+  content: "\201C";
+  color: black;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+/* quote attribution */
+blockquote span {
+  display: block;
+  color: black;
+  font-style: normal;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 1em;
+  text-align: right;
+}
+
+/* mobile adjustments of blockquotes */
+@media screen and (max-width: 900px) {
+  .blockquotetext {
+    text-align: right;
+    font-size: 0.95em;
+  }
+  blockquote span {
+    font-size: 0.85em;
+  }
+}
+
+/* area for data charts */
+.border_area {
+  background: #000000;
+  padding: 5%;
+  border-radius: 25px;
+  border: 6px solid #ff4949;
+}
+
+/* bigger area for mobile */
+@media screen and (max-width: 900px) {
+  .border_area {
+    width: 100%;
+  }
+}
+
+/* dropdown menu within border_radius */
+select {
+  width: 40%;
+  font-size: 1.4em;
+  border-radius: 8px;
+  border: 2px solid #ff4949;
+}
+
+/* data hidden by default until a dropdown option is clicked */
+.Data {
+  display: none;
+}
+
+/* inherit to give fullscreen youtube videos */
+iframe.YTVid {
+  height: inherit;
+}
+
+/* vericle allignment fot text alongside offcentre embedded tweets under the reaction sub heading */
+.vertical-align {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* social icons in header and footer */
+.headerIcon {
+  height: 30px;
+  width: 30px;
+}
+.footerIcon {
+  height: 20px;
+  width: 20px;
+}
+
+/* mobile width adjustments */
+@media screen and (max-width: 900px) {
+  .uk-width-medium-6-10 {
+    width: 90%;
+  }
+
+  .uk-width-medium-8-10 {
+    width: 90%;
+  }
+}
+.uk-width-7-10 {
+  width: 90%;
+}
+.uk-width-medium-1-5 {
+  text-align: center;
+}
+
+/* black background for footer */
+#footer {
+  background-color: black;
+}
