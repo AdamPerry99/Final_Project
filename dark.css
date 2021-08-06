@@ -1,68 +1,108 @@
+/* dark theme stylesheet */
+
 /* black background for dark theme */
 body{
-  background-color: #000000;
+  background-color: black;
 }
 
-@media screen and (max-width: 900px) {
-  .uk-width-medium-6-10 {
-    width: 90%;
-  }
-  .uk-width-medium-8-10 {
-    width: 90%;
-  }
-}
-
-.uk-width-medium-1-5{
-  text-align: center;
-}
-@media screen and (max-width: 900px) {
-.uk-width-7-10{
-    width: 90%;
-}
-}
-
+/* overlay for the header of the page on desktop */
+/* 100% width and height to fit the readers entire screen */
 .uk-overlay {
   width: 100vw;
   height: 100vh;
 }
-@media screen and (max-width: 900px) {
-.uk-overlay {
-  height: auto;
-}
-}
 
-
+/* ensures the navbar is stacked on top of other elements */
 .uk-navbar {
   z-index: 100;
 }
 
+/* mobile navbar adjustments I to keep position and prevent side scroll */
+.mobilenav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* hide mobile nav dropdown links by default on page load */
+.mobilenav #scrollsections {
+  display: none;
+}
+
+/* text adjustments for mobile nav */
+.mobilenav a {
+  color: white;
+  padding: 14px;
+  display: block;
+}
+
+/* icon adjustments for mobile nav */
+.mobilenav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -6px;
+}
+
+/* changes hover to light red color */
+.mobilenav a:hover {
+  background-color: #ff4949;
+}
+
+/* container for theme buttons */
+.button-box{
+  width: 25%;
+  margin: 0 auto;
+}
+@media only screen and (max-width:900px) {
+  .button-box{
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+
+/* buttom styling for theme toggles */
+#themeButton{
+  border: 2px solid white;
+  width: 100px;
+  color: white;
+  background-color: black;
+}
+
+/* main text */
+/* went with the default font html/css give you as I quite liked it in comparison to others and is websafe */
+/* white text for dark theme */
 p {
   color: white;
   font-size: 1.4em;
   line-height: 1.6;
 }
 
-  @media only screen and (max-width:900px) {
-    p{
-      font-size: 1.1em;
-    }
+/* smaller text for mobile */
+@media only screen and (max-width:900px) {
+  p {
+    font-size: 1.1em;
   }
+}
 
+/* bold text */
 p.bold {
   font-weight: bold;
 }
 
-
+/* caption text */
 p.caption {
   font-size: 1em;
   text-align: right;
   padding-right: 2%;
 }
 
-h1{
+/* title text with google font */
+h1 {
   font-family: 'Bree Serif', serif;
 }
-/* text adjustments */
+
+/* larger heading for main title */
 h1.uk-heading-large {
   color: black;
   line-height: 0.9em;
@@ -70,11 +110,13 @@ h1.uk-heading-large {
   font-size: 12vh;
 }
 
+/* smaller heading for secondary part of  the title */
 h1.uk-heading-small {
   color: white;
   font-size: 4vh;
 }
 
+/* changing sizes of h tags for mobile */
 @media only screen and (max-width:900px) {
   h1.uk-heading-large {
     font-size: 5vh;
@@ -83,12 +125,19 @@ h1.uk-heading-small {
   h1.uk-heading-small {
     font-size: 3vh;
   }
-  h3{
+
+  h3 {
     font-size: 2.5vh
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+  #team{
+    font-size: 0.8em;
   }
 }
 
-/* white headings */
+/* section titles */
 h2 {
   color: white;
   font-size: 2em;
@@ -96,80 +145,87 @@ h2 {
   font-weight: bold;
 }
 
+/* for byline */
 h3 {
   color: white;
   font-family: 'Bree Serif', serif;
   font-size: 3vh;
 }
 
+/* for timeline headings */
 h4 {
   font-size: 1.35em;
   font-weight: bold;
   color: white;
 }
-  @media screen and (max-width: 900px) {
-    h4{
-      font-size: 1.1em;
-    }
-  }
-h5{
+
+/* h5, h6 text for footer */
+h5 {
   color: white;
   font-size: 1.2em;
   font-weight: bold;
   text-align: center;
 }
-h6{
+h6 {
   color: white;
   font-size: 1em;
   line-height: 0.6;
 }
 
+/* white text */
 p.white {
   color: white;
 }
 
-a{
-  color: #a50707;
+/* hyperlink colour */
+/* had it as red but felt quite offensive so went with blue instead */
+/* lighter blue than light theme */
+a {
+  color: #6BAFF2;
 }
+
+/* the main red on link hover */
 a:hover {
   color: #ff4949;
 }
-a.TL{
+
+/* white hyperlinks on the timeline, less bold */
+a.TL {
   color: #FFFFFF;
   text-decoration: underline;
 }
-a.TL:hover{
-  color: #ff4949;
-}
-a.FT{
-  color: #FFFFFF;
-}
-a.FT:hover{
+
+/* usual red for hover */
+a.TL:hover {
   color: #ff4949;
 }
 
+/* footer links, samw as TL */
+a.FT {
+  color: #FFFFFF;
+}
+a.FT:hover {
+  color: #ff4949;
+}
+
+/* selects all elements for timeline with a border-box */
 * {
   box-sizing: border-box;
 }
 
-.timelinebg{
-  background-color: #494949;
+/* grey background for dark theme timeline */
+.timelinebg {
+  background-color: #525252;
 }
 
-/* Timeline container */
+/* timeline container */
 .timeline {
   position: relative;
   max-width: 80%;
   margin: 0 auto;
 }
 
-  @media screen and (max-width: 900px) {
-    .timeline{
-      max-width: 100%;
-    }
-  }
-
-/* Timeline divider down the centre */
+/* timeline divider down the centre */
 .timeline::after {
   content: '';
   position: absolute;
@@ -181,15 +237,15 @@ a.FT:hover{
   margin-left: -3px;
 }
 
-/* Container around content */
+/* container around content */
 .container {
   padding: 10px 40px;
   position: relative;
-  background-color: #494949;
+  background-color: #525252;
   width: 50%;
 }
 
-/* Timeline dots */
+/* timeline dots */
 .container::after {
   content: '';
   position: absolute;
@@ -203,17 +259,17 @@ a.FT:hover{
   z-index: 1;
 }
 
-/* Left container */
+/* left container */
 .left {
   left: 0;
 }
 
-/* Right container */
+/* right container */
 .right {
   left: 50%;
 }
 
-/* Right arrows */
+/* right arrows */
 .left::before {
   content: " ";
   height: 0;
@@ -227,7 +283,7 @@ a.FT:hover{
   border-color: transparent transparent transparent #ff4949;
 }
 
-/* Left arrows */
+/* left arrows */
 .right::before {
   content: " ";
   height: 0;
@@ -241,39 +297,43 @@ a.FT:hover{
   border-color: transparent #ff4949 transparent transparent;
 }
 
-/* Centre odd circles */
+/* centre odd circles */
 .right::after {
   left: -16px;
 }
 
-/* Text box */
+/* text box for content */
 .content {
   padding: 10px 20px;
-  background-color: #494949;
+  background-color: #525252;
   position: relative;
   border-radius: 15px;
   border: 4px solid #ff4949;
-  opacity: 0;
-  transition: ease-in 5s;
+  /*  opacity: 0;
+  transition: 2s ease-in; */
 }
 
-
-/* Screen responsive */
+/* mobile adjustments for timeline */
 @media screen and (max-width: 900px) {
 
-  /* Shift timeline bar to the left */
+    /* full size width */
+    .timeline {
+      max-width: 100%;
+    }
+
+  /* shift timeline bar to the left */
   .timeline::after {
     left: 30px;
   }
 
-  /* Container adjustments */
+  /* container adjustments */
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  /* Arrow adjustments */
+  /* arrow adjustments */
   .container::before {
     left: 60px;
     border: medium solid white;
@@ -281,35 +341,59 @@ a.FT:hover{
     border-color: transparent white transparent transparent;
   }
 
-  /* Circle adjustments */
+  /* circle adjustments */
   .left::after,
   .right::after {
     left: 15px;
   }
 
-  /* Text box adjustments */
+  /* text box adjustments */
   .right {
     left: 0%;
   }
 }
 
-
+/* quote box style */
 blockquote {
   font-size: 1.4em;
   margin: 3% auto;
   font-style: italic;
-  color: black;
+  color: white;
   padding: 1.2em 5%;
   border-left: 8px solid white;
   line-height: 1.4;
   position: relative;
 }
 
+/* quote text */
 .blockquotetext {
   line-height: 1.2;
 }
+
+/* speech mark to open quote */
+blockquote::before {
+  content: "\201C";
+  color: white;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+/* quote attribution */
+blockquote span {
+  display: block;
+  color: white;
+  font-style: normal;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 1em;
+  text-align: right;
+}
+
+/* mobile adjustments of blockquotes */
 @media screen and (max-width: 900px) {
-  .blockquotetext{
+  .blockquotetext {
     text-align: right;
     font-size: 0.95em;
   }
@@ -318,26 +402,7 @@ blockquote {
   }
 }
 
-blockquote::before {
-  content: "\201C";
-  color: black;
-  font-size: 4em;
-  position: absolute;
-  left: 10px;
-  top: -10px;
-}
-
-blockquote span {
-  display: block;
-  color: black;
-  font-style: normal;
-  font-size: 1em;
-  font-weight: bold;
-  margin-top: 1em;
-  text-align: right;
-}
-
-
+/* area for data charts */
 .border_area {
   background: #000000;
   padding: 5%;
@@ -345,44 +410,66 @@ blockquote span {
   border: 6px solid #ff4949;
 }
 
-  @media screen and (max-width: 900px) {
-    .border_area{
-      width: 100%;
-    }
+/* bigger area for mobile */
+@media screen and (max-width: 900px) {
+  .border_area {
+    width: 100%;
   }
+}
 
+/* dropdown menu within border_radius */
 select {
   width: 40%;
   font-size: 1.4em;
   border-radius: 8px;
   border: 2px solid #ff4949;
-
 }
 
+/* data hidden by default until a dropdown option is clicked */
 .Data {
   display: none;
 }
 
+/* inherit to give fullscreen youtube videos */
 iframe.YTVid {
   height: inherit;
 }
 
-.vertical-align{
+/* vericle allignment fot text alongside offcentre embedded tweets under the reaction sub heading */
+.vertical-align {
   display: flex;
-justify-content: center;
-flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.headerIcon{
+/* social icons in header and footer */
+.headerIcon {
   height: 30px;
   width: 30px;
 }
-
-.footerIcon{
+.footerIcon {
   height: 20px;
   width: 20px;
 }
 
-#footer{
-  background-color: #494949;
+/* mobile width adjustments */
+@media screen and (max-width: 900px) {
+  .uk-width-medium-6-10 {
+    width: 90%;
+  }
+
+  .uk-width-medium-8-10 {
+    width: 90%;
+  }
+}
+.uk-width-7-10 {
+  width: 90%;
+}
+.uk-width-medium-1-5 {
+  text-align: center;
+}
+
+/* black background for footer */
+#footer {
+  background-color: #525252;
 }
