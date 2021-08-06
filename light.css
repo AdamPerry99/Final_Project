@@ -43,6 +43,26 @@
   background-color: #ff4949;
 }
 
+/* container for theme buttons */
+.button-box{
+  width: 25%;
+  margin: 0 auto;
+}
+@media only screen and (max-width:900px) {
+  .button-box{
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+
+/* buttom styling for theme toggles */
+#themeButton{
+  border: 2px solid black;
+  width: 100px;
+  background-color: white;
+}
+
 /* main text */
 /* went with the default font html/css give you as I quite liked it in comparison to others and is websafe */
 p {
@@ -105,6 +125,9 @@ h1.uk-heading-small {
   h4 {
     font-size: 1.1em;
   }
+  #team{
+    font-size: 0.8em;
+  }
 }
 
 /* section titles */
@@ -141,6 +164,7 @@ h6 {
   font-size: 1em;
   line-height: 0.6;
 }
+
 
 /* white text */
 p.white {
